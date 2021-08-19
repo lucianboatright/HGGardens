@@ -1,0 +1,98 @@
+
+
+.designList {
+    margin-left: 50px;
+    padding: 0px;
+    color: rgb(77, 136, 128)
+}
+
+.designHeader {
+    /* margin-left: 30px; */
+    margin-left: 10px;
+    padding: 0px;
+    color:  rgb(213,117,86);
+}
+
+
+.designList { 
+    /* padding: 10px; */
+    transition: all .5s ease-in-out; 
+    font-size: 5px;
+}
+
+.designList:hover { 
+    padding-left: 50px;
+    transform: scale(1.1); 
+    font-size: 20px;
+}
+
+.themed-container {
+    color: green;
+}
+.column {
+    color: green;
+}
+
+.rows {
+    background: red;
+}
+
+/* .services ul li a{
+    color: rgb(223, 116, 87);
+    background: rgb(243, 248, 233);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 1s ease;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(10, 3, 105);
+
+}
+
+.services ul li a:hover{
+    background: rgb(77, 136, 128);
+    color: rgb(223, 116, 87);
+    padding-left: 18px;
+}
+
+.services ul {
+    background: rgb(243, 248, 233);
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease
+} 
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background: rgb(243, 248, 233)
+}
+
+.services ul {
+    transition-delay: 10s;
+    color: rgb(43, 85, 79);
+    padding-left: 10px;
+    list-style: none;
+    height: auto;
+    background: transparent;
+    padding-right: 20px;
+}
+
+.service ul:Hover {
+   
+    background: rgb(223, 116, 87);
+    color: red;
+} */
+/* .design ul a:hover {
+    transition: 1s ease;
+    background: rgb(223, 116, 87);
+    color: rgb(43, 85, 79);
+    transition: 1s ease;
+    padding-left: 10px;
+    list-style: none;
+    height: auto;
+    background: transparent;
+    /* padding-right: 20px; */
+
+

@@ -1,0 +1,216 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+* {
+    font-family: 'BuggieFont';
+}
+
+.flexItem > a:first-child { display: none; }
+.flexItem:hover > a:first-child { display: inline; }
+.flexItem:hover > a:last-child { display: none; }
+.flexContainer { display: flex; }
+.flexItem {
+    animation-name: bounceInLeft;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+  
+.zoom:hover {
+    transform: scale(12); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(28, 70, 54);
+}
+
+.contactName {
+    text-decoration: 'none';
+    color: 'red';
+}
+
+.contactPhone {
+    text-decoration: 'none';
+    color: 'red';
+}
+
+.logo img{
+    width: 80px;
+}
+
+/* .navbar.motto {
+    display: inline-block;
+    text-align: center;
+} */
+
+.motto {
+    display: inline-block;
+    left: 0;
+    right: 0;
+    margin:0;
+    float: none;
+    color: rgb(199, 68, 24);
+}
+
+
+
+.contactinfo a:hover {
+    position: relative;
+    /* margin-left: 200px; */
+    transition: 1.5s ease;
+    font-weight: bold;
+    /* background: rgb(77, 136, 128); */
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(213,117,86);
+    
+}
+
+.emailcontact img{
+    width: 20px;
+    margin-bottom: 10px;
+}
+.contactName {
+    margin-left: 100px;
+    color: 'red';
+}
+.emailcontact  img:hover{
+    /* width: 20px; */
+    /* transition: 1s ease;
+    padding-left: 10px */
+}
+
+
+.phonecontact img{
+    width: 20px;
+}
+.contactPhone {
+    margin-left: 10px;
+}
+.phonecontact  img:hover{
+    width: 20px;
+    transition: 1s ease;
+    /* padding-left: 10px */
+}
+/* navbar items  */
+.bar{
+    width: 30px;
+    margin: 5px;
+    height: 5px;
+    color: rgb(199, 68, 24);
+    background: rgb(10, 3, 105);
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* menue button */
+.btn {
+    border: 1px solid rgb(10, 3, 105);
+    display: inline-block;
+    border-radius: 5px;
+
+}
+/* menue button */
+.logoBtn {
+    background: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(10, 3, 105);
+}
+
+
+ul.nav {
+    background: rgb(233, 233, 233);
+    list-style: none;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease
+}
+
+.showNav{
+    height:132px;  
+    /* old value (176: 4 tabs) */
+}
+
+
+/* test for buttons on nav bar */
+ul.nav li a{
+    color: rgb(199, 68, 24);
+    background: rgb(233, 233, 233);
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 1s ease;
+    font-size: 20px;
+    /* border-bottom: 1px solid rgb(10, 3, 105); */
+
+}
+
+
+/* logo box */
+
+/* nav bar when window is large */
+@media screen {
+    .logo img{
+        width: 150px
+    }
+    nav.navbar{
+        background: rgb(233, 233, 233);
+        color: rgb(199, 68, 24);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        border-bottom: 1px solid rgb(199, 68, 24)
+
+    }
+
+    .btn{
+        display: none;
+    }
+
+
+    ul.nav{
+        background: rgb(233, 233, 233);
+        display: flex;
+        list-style: none;
+        height: auto;
+        background: transparent;
+        
+        /* padding-right: 20px; */
+    }
+
+    .showNav{
+        height: auto;
+    }
+
+    ul.nav li a:hover.nav{
+        /* background: rgb(77, 136, 128); */
+        color: rgb(223, 116, 87);
+        font-weight: bold;
+
+    }
+
+    nav.navbar ul.nav a:hover{
+        border-radius: 5px;
+        background: transparent;
+        /* padding-left: 40px; */
+        font-weight: bold;
+        
+        /* background: rgb(77, 136, 128); */
+        color: rgb(223, 116, 87);
+    }
+    .logoBtn{
+        border: none;
+    }
+}

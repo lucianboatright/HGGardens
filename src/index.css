@@ -1,0 +1,22 @@
+@font-face {
+  margin: 0;
+  font-family: 'BuggieFont';
+  src: local('BuggieFont'), url('./fonts/buggie-font/BuggieFont.ttf') format("truetype");
+  font-weight: normal;  
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+@font-face {
+  margin: 0;
+  font-family: "BuggieFont";
+  src: local("BuggieFont"), url("./fonts/buggie-font/BuggieFont.ttf") format("truetype");
+  font-weight: normal;  
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+code {
+  font-family: "BuggieFont";
+  src: local("BuggieFont"), url("./fonts/buggie-font/BuggieFont.ttf") format("truetype");
+  font-weight: normal;  
+}
