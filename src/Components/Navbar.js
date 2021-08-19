@@ -3,14 +3,37 @@ import logo from './img/HugoLogo_small.png'
 import emailLogo from './img/Email_logo_copy.png'
 import phoneLogo from './img/Phone_logo_copy.png'
 import navbar from "./Styling/Navbar.module.css"
-import grassImage from '../ImageGallery/grassLongpng.png'
+import flower from './img/largeYelow.png'
+
 
 import {Link} from 'react-router-dom'
 
 class Navbar extends Component {
+    constructor(props) {
+        super(props);
+        this.displayName = 'Item';
+        // // 1. bind your functions in the constructor.
+        // this.mouseOver = this.mouseOver.bind(this);
+        // this.mouseOut = this.mouseOut.bind(this);
+        this.state = {
+            hover: false,
+            isOpen: false,
+        };
+    }
 
-    state={
-        isOpen: false,
+    mouseOverEmail = () => {
+        this.setState({hover: true});
+        console.log();
+    }
+    mouseOutEmail = () => {
+        this.setState({hover: false});
+    }
+    mouseOverPhone = () => {
+        this.setState({hover: true});
+        console.log();
+    }
+    mouseOutPhone = () => {
+        this.setState({hover: false});
     }
 
     menuClick = () => {
@@ -20,7 +43,7 @@ class Navbar extends Component {
     }
     
 
-    render(){
+    render() {
         return (
             <nav className={navbar.navbar}>
                 <div className={navbar.logoBtn}>
@@ -29,28 +52,19 @@ class Navbar extends Component {
                         <Link to="/Home"><img src={logo} alt=""></img></Link>
                     </div>
                     <div className={navbar.contactinfo}>
-                        <div className={navbar.phonecontact}>
-                            <div className={navbar.containerA}>
-                                <Link className={navbar.contactLink} to="/Contact" ><img src={emailLogo} alt="" style={{paddingRight:'10px'}} /><div className="contactName">    Info@hbgardens.co.uk</div></Link>
-                                <div className={navbar.overlayA}>
-                                    <img src={grassImage} alt="Avatar" style={{ width: '14rem', paddingLeft: '8rem' }} className={navbar.textA} />
-                                </div>
-                            </div>
-                            {/* <div className={navbar.grassBackground}>
-                                <img className={navbar.zoom} src={grassImage} alt="grass" />
-                                <Link className={navbar.contactLink} to="/Contact" ><img src={emailLogo} alt="" style={{paddingRight:'10px'}} /><div className="contactName">    Info@hbgardens.co.uk</div></Link>
-                            </div> */}
+                        <div className={navbar.phonecontact} style={{ paddingBottom: '0.5rem' }}>
+                            <Link className={navbar.contactLink} to="/Contact" onMouseOver={this.mouseOverEmail} onMouseOut={this.mouseOutEmail}>
+                                {this.state.hover ? (<div><img src={flower} style={{ height: '1rem', display: 'inline' }}/><div style={{ display: 'inline' }} className="contactName">Info@hbgardens.co.uk</div></div>) : <div><img src={emailLogo} alt="" style={{paddingRight:'10px', display: 'inline' }} /><div style={{ display: 'inline' }} className="contactName">Info@hbgardens.co.uk</div></div>} 
+                            </Link>
                         </div>
-                        <div className={navbar.phonecontact}>
+                        <div className={navbar.phonecontact} style={{ paddingBottom: '0.5rem' }}>
+                            <Link className={navbar.contactLink} to="/Contact" onMouseOver={this.mouseOverPhone} onMouseOut={this.mouseOutPhone}>
+                                {this.state.hover ? (<div><img src={flower} style={{ height: '1rem', display: 'inline' }}/><div style={{ display: 'inline' }} className="contactName">07895785400</div></div>) : <div><img src={phoneLogo} alt="" style={{paddingRight:'10px', display: 'inline' }} /><div style={{ display: 'inline' }} className="contactName">07895785400</div></div>}                             </Link>
+                        </div>
+                        {/* <div className={navbar.phonecontact}>
                             <Link className={navbar.contactLink} to="/Contact" ><img src={phoneLogo} alt=""style={{paddingRight:'10px'}} /><div className="contactPhone">    07895785400 </div></Link>
-                        </div>
+                        </div> */}
                     </div>
-                    {/* <div className={navbar.containerA}>
-                        <div className={navbar.imageA}>Hello World</div>
-                        <div className={navbar.overlayA}>
-                            <img src={grassImage} alt="Avatar" style={{ height: '1rem' }} className={navbar.textA} />
-                        </div>
-                    </div> */}       
 
                     <div className={navbar.btn} onClick={this.menuClick}>
                         <div className={navbar.bar}></div>
