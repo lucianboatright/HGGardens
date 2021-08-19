@@ -29,30 +29,32 @@ class Navbar extends Component {
                         <Link to="/Home"><img src={logo} alt=""></img></Link>
                     </div>
                     <div className={navbar.contactinfo}>
-                        <div className={navbar.flexContainer}>
-                            <div className={navbar.flexItem}>
-                                <a href="ArchitectureWork.html"><img src={grassImage} width="auto" height="60" alt="" /></a>
-                                <Link className={navbar.contactLink} to="/Contact" ><img src={emailLogo} alt="" style={{ paddingRight:'10px', height: '1rem'}} /><div className="contactName">    Info@hbgardens.co.uk</div></Link>
-                                {/* <a href="ArchitectureWork.html"><h3 style={{ textAlign: "center" }}>Tekst1</h3></a> */}
+                        <div className={navbar.phonecontact}>
+                            <div className={navbar.grassBackground}>
+                                <img className={navbar.zoom} src={grassImage} alt="grass" />
+                                <Link className={navbar.contactLink} to="/Contact" ><img src={emailLogo} alt="" style={{paddingRight:'10px'}} /><div className="contactName">    Info@hbgardens.co.uk</div></Link>
                             </div>
                         </div>
-                        {/* <div className={navbar.phonecontact}>
-                            <Link className={navbar.contactLink} to="/Contact" ><img src={emailLogo} alt="" style={{paddingRight:'10px'}} /><div className="contactName">    Info@hbgardens.co.uk</div></Link>
-                            <img className={navbar.zoom} src={grassImage} alt="image" />
-                        </div> */}
                         <div className={navbar.phonecontact}>
                             <Link className={navbar.contactLink} to="/Contact" ><img src={phoneLogo} alt=""style={{paddingRight:'10px'}} /><div className="contactPhone">    07895785400 </div></Link>
                         </div>
                     </div>
+                    {/* <div class="container">
+                        <img src="img_avatar.png" alt="Avatar" class="image" />
+                        <div class="overlay">
+                            <div class="text">Hello World</div>
+                        </div>
+                    </div> */}
+                    
 
                     <div className={navbar.btn} onClick={this.menuClick}>
                         <div className={navbar.bar}></div>
                         <div className={navbar.bar}></div>
                         <div className={navbar.bar}></div>
                         <div className={navbar.bar}></div>
-                    </div>              
-                </div>
+                    </div>
                     
+                </div>
                 <div className={navbar.motto} style={{ textAlign: 'center'}}><h2>DESIGN / INSTALL / MAINTAIN</h2></div>
 
                 <div className={navbar.page_link}>

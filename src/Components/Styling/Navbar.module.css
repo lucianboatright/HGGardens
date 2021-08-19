@@ -6,25 +6,49 @@
     font-family: 'BuggieFont';
 }
 
-.flexItem > a:first-child { display: none; }
-.flexItem:hover > a:first-child { display: inline; }
-.flexItem:hover > a:last-child { display: none; }
-.flexContainer { display: flex; }
-.flexItem {
-    animation-name: bounceInLeft;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-
-.zoom {
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
+/* ########################### */
+.containerA {
+    position: relative;
+    width: 50%;
 }
   
-.zoom:hover {
-    transform: scale(12); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.contactLine {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+  
+.overlayA {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+  
+.containerA:hover .overlayA {
+    opacity: 1;
+}
+  
+.grassPopUp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* ################### */
+
+/* ################### */
+.grassBackground {
+    position: relative;
+    text-align: center;    
 }
 
 .contactLink {
@@ -33,6 +57,25 @@
     text-decoration: none;
     color: rgb(28, 70, 54);
 }
+/* ################### */
+
+/* ################### */
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+}
+  
+.zoom:hover {
+    transform: scale(12); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/* ######################### */
+
+/* .contactLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(28, 70, 54);
+} */
 
 .contactName {
     text-decoration: 'none';
