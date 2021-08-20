@@ -6,6 +6,27 @@
     font-family: 'BuggieFont';
 }
 
+.card {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+.card:hover .imageOverlay {
+    width: 30px;
+    display: inline;
+}
+
+.card .imageOverlay {
+    display: none;
+    position: absolute;
+    top: 50;
+    left: 50;
+    z-index: 50;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
 .contactLink {
     display: flex;
     align-items: center;
@@ -15,7 +36,7 @@
 
 .contactName {
     text-decoration: 'none';
-    color: 'red';
+    padding-left: 0.5rem;
 }
 
 .contactPhone {
@@ -60,7 +81,7 @@
     margin-bottom: 10px;
 }
 .contactName {
-    margin-left: 100px;
+    /* margin-left: 100px; */
     color: 'red';
 }
 .emailcontact  img:hover{
