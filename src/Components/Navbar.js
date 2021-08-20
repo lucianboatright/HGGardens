@@ -4,6 +4,7 @@ import emailLogo from './img/Email_logo_copy.png'
 import phoneLogo from './img/Phone_logo_copy.png'
 import navbar from "./Styling/Navbar.module.css"
 import flower from '../ImageGallery/largeYelow.png'
+import grassImage from '../ImageGallery/pngwing.com(1).png'
 
 
 import {Link} from 'react-router-dom'
@@ -71,7 +72,10 @@ class Navbar extends Component {
 
                 <div className={navbar.page_link}>
                     <ul className={navbar.nav}>
-                        <li><Link to="/Home">Home</Link></li>
+                        <li>
+                            <Link to="/Home">Home</Link>
+                            <img src={grassImage} alt="grassImage" className={navbar.grassPop} />
+                        </li>
                         <li><Link to="/About">About</Link></li>
                         <li><Link to="/Pictures">Pictures</Link></li>
                         <li><Link to="/Services">Services</Link></li>
