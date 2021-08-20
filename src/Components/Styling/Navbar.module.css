@@ -5,27 +5,82 @@
 * {
     font-family: 'BuggieFont';
 }
+.container {
+    position: relative;
+    width: 7%;
+}
+  
+.imageA {
+    height: 3rem;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.container:hover .imageA {
+    opacity: 0.3;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    height: 2rem;
+    width: 2rem;
+}
 
-.card {
+/* .card {
     width: 30px;
     height: 30px;
     position: relative;
-    display: inline-block;
+    width: 50%;
 }
-.card:hover .imageOverlay {
-    width: 30px;
-    display: inline;
+.emailPopUp {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;  
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+} */
+
+/* .container:hover .emailPopUp {
+    opacity: 0.3
 }
 
-.card .imageOverlay {
-    display: none;
-    position: absolute;
-    top: 50;
-    left: 50;
-    z-index: 50;
+.container:hover .middle {
     opacity: 1;
-    transition: opacity 1s ease-out;
 }
+
+.flowerPopUp {
+    width: 30px;
+    height: 30px;
+} */
 
 .contactLink {
     display: flex;

@@ -31,22 +31,30 @@ class Navbar extends Component {
                     </div>
                     <div className={navbar.contactinfo}>
                         <div className={navbar.phonecontact} style={{ paddingBottom: '0.5rem' }}>
-                            <div className={navbar.card}>
+                            <div className={navbar.container}>
                                 <Link className={navbar.contactLink} to="/Contact" >
-                                {/* <img src={emailLogo} alt="" style={{paddingRight:'10px'}} /> */}
-                                {/* <div className={navbar.card}> */}
-                                    <img src={emailLogo} alt='emailLogo'/>
-                                    <img src={flower} alt='flower' className={navbar.imageOverlay}/>
-                                {/* </div> */}
-                                    <div className={navbar.contactName}>Info@hbgardens.co.uk</div>
+                                    <img src={emailLogo} alt="Avatar" className={navbar.imageA} />
+                                    <div className={navbar.middle}>
+                                        <img src={flower} alt='flower' className={navbar.text}/>
+                                    </div>
+                                <div className={navbar.contactName}>Info@hbgardens.co.uk</div>
                                 </Link>
                             </div>
                         </div>
                         <div className={navbar.phonecontact}>
-                            <Link className={navbar.contactLink} to="/Contact" >
+                            <div className={navbar.container}>
+                                <Link className={navbar.contactLink} to="/Contact" >
+                                    <img src={phoneLogo} alt="Avatar" className={navbar.imageA} />
+                                    <div className={navbar.middle}>
+                                        <img src={flower} alt='flower' className={navbar.text}/>
+                                    </div>
+                                <div className={navbar.contactName}>07895785400</div>
+                                </Link>
+                            </div>
+                            {/* <Link className={navbar.contactLink} to="/Contact" >
                                 <img src={phoneLogo} alt=""style={{paddingRight:'10px'}} />
                                 <div className="contactPhone">    07895785400 </div>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                     
