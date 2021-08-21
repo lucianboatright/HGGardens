@@ -8,6 +8,7 @@
 
 .grassPop {
     position: absolute;
+    left: 72.5%;
     top: 10%;
     height: 3px;
     width: 40px;
@@ -55,8 +56,8 @@
 }
   
 .text {
-    height: 2rem;
-    width: 2rem;
+    height: 40px;
+    width: 40px;
 }
 
 /* .card {
@@ -136,7 +137,7 @@
 
 .contactinfo a:hover {
     position: relative;
-    /* margin-left: 200px; */
+    padding-left: 3rem;
     transition: 1.5s ease;
     font-weight: bold;
     /* background: rgb(77, 136, 128); */
@@ -161,14 +162,14 @@
 }
 
 
-.phonecontact img{
+.phonecontact.imageA img{
     width: 20px;
 }
 .contactPhone {
     margin-left: 10px;
 }
 .phonecontact  img:hover{
-    width: 20px;
+    width: 40px;
     transition: 1s ease;
     /* padding-left: 10px */
 }
